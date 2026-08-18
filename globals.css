@@ -1,0 +1,33 @@
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; background: #050b12; color: #e5edf5; font-family: Arial, sans-serif; }
+body { min-height: 100vh; }
+button { font: inherit; }
+.shell { min-height: 100vh; background: radial-gradient(circle at top, #0b1724 0, #050b12 55%); }
+.topbar { height: 72px; display: flex; align-items: center; gap: 18px; padding: 0 22px; border-bottom: 1px solid #1c2a38; position: sticky; top: 0; z-index: 5; background: rgba(5,11,18,.94); backdrop-filter: blur(10px); }
+.brand { font-weight: 800; letter-spacing: 2px; color: #a3ff4f; font-size: 22px; margin-right: auto; }
+.symbol { display: flex; align-items: center; gap: 10px; font-size: 19px; }
+.coin { width: 36px; height: 36px; display: grid; place-items: center; border-radius: 50%; background: #f59e0b; color: #111827; font-weight: 800; }
+.live { font-size: 11px; padding: 4px 7px; border-radius: 5px; background: #123322; color: #70e38f; margin-left: 5px; }
+.iconBtn, .toolBtn, .tf { background: transparent; color: #9fb0c1; border: 1px solid #253647; border-radius: 9px; padding: 9px 12px; }
+.iconBtn { border: 0; font-size: 24px; }
+.quote { padding: 25px 22px 18px; }
+.title { font-size: 24px; font-weight: 700; }
+.price { margin-top: 10px; font-size: 42px; font-weight: 700; }
+.price span { font-size: 16px; color: #25d7a0; font-weight: 500; }
+.toolbar { display: flex; align-items: center; gap: 10px; padding: 12px 22px; border-top: 1px solid #172536; border-bottom: 1px solid #172536; overflow-x: auto; }
+.timeframes { display: flex; gap: 5px; margin-left: auto; }
+.tf { border: 0; padding: 10px 13px; white-space: nowrap; }
+.tf.active { background: #193d2a; color: #a3ff4f; }
+.chartCard { padding: 8px 8px 0; }
+.chart { width: 100%; height: 560px; touch-action: none; }
+.hint { color: #708295; text-align: center; padding: 13px 16px 25px; font-size: 13px; }
+@media (max-width: 700px) {
+  .topbar { padding: 0 12px; gap: 8px; }
+  .quote { padding: 18px 14px 12px; }
+  .title { font-size: 20px; }
+  .price { font-size: 34px; }
+  .toolbar { padding: 10px 12px; }
+  .toolBtn { display: none; }
+  .timeframes { margin-left: 0; }
+  .chart { height: 520px; }
+}
